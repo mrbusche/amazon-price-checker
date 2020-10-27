@@ -3,7 +3,7 @@ import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
 internal class CheckerApplicationTests {
-    private val url = "https://www.amazon.com/gp/registry/wishlist/153OV2P85MJD6/ref=cm_wl_list_o_0?sort=universal-price&view=null&filter=price-drop"
+    private val url = "https://www.amazon.com/gp/registry/wishlist/153OV2P85MJD6?sort=universal-price"
     private val priceDropPercent = 60
     private val maxPrice = 5
 

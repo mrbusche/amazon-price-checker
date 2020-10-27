@@ -28,7 +28,9 @@ class CheckerService {
                             priceDropItems.add(itemTitle)
                         }
                     } catch (nfe: NumberFormatException) {
-                        // not a valid int
+                        println(nfe.message)
+                    } catch (ioe: IndexOutOfBoundsException) {
+                        println(ioe.message)
                     }
                 }
             }

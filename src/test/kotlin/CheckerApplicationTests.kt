@@ -14,14 +14,14 @@ internal class CheckerApplicationTests {
     @Test
     fun `Test find items by Maximum Price`() {
         val priceDrops = CheckerService.retrieveByPriceDrop(priceDropUrl, false, maxPrice)
-        println(priceDrops.toString())
+        priceDrops.forEach { println(it) }
         assertEquals(0, priceDrops.size)
     }
 
     @Test
     fun `Test find items by Price Drop Percentage`() {
         val priceDrops = CheckerService.retrieveByPriceDrop(percentDropUrl, true, priceDropPercent)
-        println(priceDrops.toString())
+        priceDrops.forEach { println(it) }
         assertEquals(0, priceDrops.size)
     }
 }

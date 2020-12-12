@@ -17,7 +17,7 @@ class CheckerService {
             for (elem in elements) {
                 val element = elem.attr("class", SECTION_LIST_ITEM_CLASS)
                 try {
-                    if (element.childNode(1).childNodeSize() == 6 || element.childNode(1).childNodeSize() == 7) {
+                    if (element.childNode(1).childNodeSize() >= 6 && element.childNode(1).childNodeSize() <= 8) {
                         try {
                             val priceDrop = element.childNode(1).childNode(4).childNode(1).childNode(0).toString().replace("Price dropped ", "").replace("%", "").replace("$", "").trim().toInt()
                             val newPrice = element.childNode(1).childNode(2).childNode(1).childNode(1).childNode(0).childNode(0).toString().replace("$", "").toDouble()

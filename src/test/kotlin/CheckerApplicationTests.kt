@@ -8,8 +8,8 @@ internal class CheckerApplicationTests {
     private val maxPrice = 5
     
     // variables for testing by price drop percentage
-    private val percentDropUrl = "https://www.amazon.com/hz/wishlist/ls/9DBWZYQBDQ5S?sort=universal-price"
-    private val priceDropPercent = 25
+    private val percentDropUrl = "https://www.amazon.com/hz/wishlist/ls/9DBWZYQBDQ5S?&sort=price-asc"
+    private val priceDropPercent = 27
 
     @Test
     fun `Test find items by Maximum Price`() {
